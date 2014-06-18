@@ -3,20 +3,26 @@
         var $map = $('#map');
 
         var styles = [{
-            'stylers': [
-                { 'saturation': -100 },
-                { 'visibility': 'simplified' },
-                { 'invert_lightness': true },
-                { 'lightness': 16 },
-                { 'weight': 0.9 }
-            ]
+            'stylers': [{
+                'saturation': -100
+            }, {
+                'visibility': 'simplified'
+            }, {
+                'invert_lightness': true
+            }, {
+                'lightness': 16
+            }, {
+                'weight': 0.9
+            }]
         }];
 
-        var styledMap = new google.maps.StyledMapType(styles, {name: 'GDG Campania Map'});
+        var styledMap = new google.maps.StyledMapType(styles, {
+            name: 'GDG Campania Map'
+        });
 
         var mapOptions = {
             zoom: 14,
-            center: new google.maps.LatLng(40.912610, 14.785914),
+            center: new google.maps.LatLng(41.003036, 14.329344),
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             disableDefaultUI: true,
             scrollwheel: false,
